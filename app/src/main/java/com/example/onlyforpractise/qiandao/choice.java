@@ -59,7 +59,7 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
            Little little=datalist1.get(i);
-           t2.setText(little.getName());//
+           t2.setText(little.getName());
             }
         });
 
