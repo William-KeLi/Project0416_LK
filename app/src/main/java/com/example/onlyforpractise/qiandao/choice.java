@@ -23,6 +23,8 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
     String name2[]={"古典音乐","童谣","摇滚乐"};
     TextView t1,t2;
     ImageButton b1;
+    String str1 ="";
+    String str2="";
 
 
     @Override
@@ -52,14 +54,24 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Little little=datalist2.get(i);
-                t1.setText(little.getName());
+                if (str1.contains(little.getName())) {
+                str1+="";
+                }else {
+                    str1 += little.getName();
+                }
+                t2.setText(str1);
             }
         });
         yundong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
            Little little=datalist1.get(i);
-           t2.setText(little.getName());
+                if (str2.contains(little.getName())) {
+                    str2+="";
+                }else {
+                    str2 += little.getName();
+                }
+           t1.setText(str2);
             }
         });
 
