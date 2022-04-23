@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/drawable/button_shape.xml" value="0.168" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/drawable/ic_calendar.xml" value="0.183" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/drawable/ic_success.xml" value="0.183" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/drawable/ic_user.xml" value="0.183" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_bianxing.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_choice.xml" value="0.19166666666666668" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_dengji.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_display.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_information_inquiring.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_login_page.xml" value="0.2536231884057971" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_main2.xml" value="0.19166666666666668" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_plane_game_simple.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_regist_page.xml" value="0.2536231884057971" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_yourname.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_yuanhua.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/activity_zhuce.xml" value="0.22826086956521738" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/bianxing.xml" value="0.15885416666666666" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/fragment_mingzi_xianshi.xml" value="0.15885416666666666" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/fragment_ni_mingzi.xml" value="0.15885416666666666" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/fragment_xia_mingzi.xml" value="0.15885416666666666" />
+        <entry key="..\:/study/AndroidProgramDate/OnlyForPractise/app/src/main/res/layout/little_qiandao.xml" value="0.19166666666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

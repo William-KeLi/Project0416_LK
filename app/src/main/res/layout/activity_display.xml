@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moviesDisplay.DisplayActivity"
+    android:orientation="vertical"
+    android:background="@drawable/huan">
+
+    <FrameLayout
+        android:id="@+id/mingzi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/qishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变形金刚：最后的骑士"
+            android:layout_marginBottom="20dp"
+            android:textColor="#CDDC39"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/dongman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            android:text="你の名字" />
+
+        <TextView
+            android:id="@+id/yuanhuade"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#2196F3"
+            android:layout_height="wrap_content"
+            android:text="夏洛特烦恼" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/xianshipic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="||点击上面的名字显示海报||点击上面的名字显示海报"
+            android:textColor="#E65454"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <requestFocus></requestFocus>
+        </TextView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="点击显示海报电影名字"
+            android:background="@drawable/button_shape"/>
+    </LinearLayout>
+</LinearLayout>
