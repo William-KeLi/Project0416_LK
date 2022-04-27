@@ -1,5 +1,6 @@
 package com.example.onlyforpractise.qiandao;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,6 +26,8 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
     ImageButton b1;
     String str1 ="";
     String str2="";
+
+    int[]count={1,1,1,1,1,1};
 
 
     @Override
@@ -53,25 +56,33 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
         yinyue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                count[i]++;
                 Little little=datalist2.get(i);
-                if (str1.contains(little.getName())) {
-                str1+="";
-                }else {
-                    str1 += little.getName();
+                if (count[i]==2){
+                    str2+=little.getName();
+                }else if(count[i]%2!=0){
+                    str2.replace(little.getName(),"");
+                    str2+="";
+                }else if(count[i]%2==0){
+                    str2+=little.getName();
                 }
-                t2.setText(str1);
+
+                t2.setText(str2);
             }
         });
         yundong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                count[i]++;
            Little little=datalist1.get(i);
-                if (str2.contains(little.getName())) {
-                    str2+="";
-                }else {
-                    str2 += little.getName();
+                if (count[i]==2){
+                    str1+=little.getName();
+                }else if(count[i]%2!=0){
+                    str1.replace(little.getName(),"");
+                }else if(count[i]%2==0){
+                    str1+="";
                 }
-           t1.setText(str2);
+           t1.setText(str1);
             }
         });
 
@@ -79,9 +90,24 @@ public class choice extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        if (view.getId()==R.id.imageView212){
-            Intent intent=new Intent(this,MainActivity.class);
-            startActivity(intent);
+        switch (view.getId()){
+            case R.id.imageButton4:
+                Intent intent1=new Intent(this,My.class);
+                startActivity(intent1);
+                break;
+            case R.id.imageButton2:
+                Intent intent2=new Intent(this,MainActivity.class);
+                startActivity(intent2);
+                break;
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode==1&&resultCode==0){
+            t1.setText(data.getStringExtra("yundong"));
+            t2.setText(data.getStringExtra("yinyue"));
         }
     }
 }

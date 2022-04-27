@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent=new Intent(this,choice.class);
                 startActivity(intent);
                 break;
+            case R.id.imageButton4:
+                Intent intent1=new Intent(this,My.class);
+                startActivity(intent1);
+                break;
         }
     }
 }
